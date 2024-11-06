@@ -1,0 +1,113 @@
+:root {
+    --primary-dark: #1a1f2e;
+    --secondary-dark: #252b3d;
+    --accent-color: #4CAF50;
+    --text-light: #ffffff;
+    --text-gray: #9ba1b0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+    background-color: var(--primary-dark);
+    color: var(--text-light);
+    min-height: 100vh;
+}
+
+nav {
+    background-color: var(--secondary-dark);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    color: var(--accent-color);
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 2rem;
+}
+
+.sidebar {
+    background-color: var(--secondary-dark);
+    border-radius: 8px;
+    padding: 1rem;
+    height: fit-content;
+}
+
+.category-select h3 {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.category-select ul {
+    list-style: none;
+}
+
+.category-select li {
+    margin-bottom: 0.5rem;
+}
+
+.category-select a {
+    color: var(--text-gray);
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.category-select a:hover,
+.category-select a.active {
+    background-color: var(--primary-dark);
+    color: var(--text-light);
+}
+
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.post {
+    background-color: var(--secondary-dark);
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.post:hover {
+    transform: translateX(5px);
+}
+
+.post-title {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.post-info {
+    display: flex;
+    gap: 1rem;
+    color: var(--text-gray);
+    font-size: 0.9rem;
+}
+
