@@ -1,0 +1,242 @@
+:root {
+    --primary-dark: #1a1f2e;
+    --secondary-dark: #252b3d;
+    --accent-color: #4CAF50;
+    --text-light: #ffffff;
+    --text-gray: #9ba1b0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a2327 0%, #1f2432 100%);
+    padding: 20px;
+}
+
+.card {
+    width: 100%;
+    max-width: 1000px;
+    background: var(--primary-dark);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.split-container {
+    display: flex;
+}
+
+.brand-section {
+    background: var(--secondary-dark);
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    min-height: 600px;
+}
+
+.fern-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./fern.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+}
+
+.brand-content {
+    position: relative;
+    z-index: 1;
+    padding: 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.crown {
+    font-size: 2rem;
+}
+
+h1 {
+    color: var(--text-light);
+    font-size: 2.5rem;
+}
+
+.tagline {
+    color: var(--text-light);
+    margin-bottom: 30px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.learn-more {
+    background: transparent;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: all 0.3s ease;
+}
+
+.learn-more:hover {
+    background: var(--accent-color);
+    color: var(--text-light);
+}
+
+.form-section {
+    flex: 1;
+    padding: 40px;
+    background: var(--primary-dark);
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: var(--text-gray);
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+.form-container {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.form-container.hidden {
+    display: none;
+    opacity: 0;
+}
+
+h2 {
+    color: var(--text-light);
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+.subtitle {
+    color: var(--text-gray);
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid var(--secondary-dark);
+    background: var(--secondary-dark);
+    border-radius: 25px;
+    color: var(--text-light);
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.1);
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-gray);
+}
+
+.forgot-password {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.forgot-password:hover {
+    opacity: 0.8;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: var(--accent-color);
+    border: none;
+    border-radius: 25px;
+    color: var(--text-light);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #43A047;
+    transform: translateY(-1px);
+}
+
+.switch-form-link {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--text-gray);
+}
+
+.switch-form-link a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.switch-form-link a:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .split-container {
+        flex-direction: column;
+    }
+    
+    .brand-section {
+        padding: 30px;
+        min-height: 300px;
+    }
+    
+    .form-section {
+        padding: 30px;
+    }
+}
