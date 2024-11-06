@@ -216,6 +216,7 @@ nav span .register:hover{
 .container .post .reaction .likes div span button i:hover {
     color: blue !important;
 }
+
 /* ---------------------- */
 .modal {
     display: flex;
