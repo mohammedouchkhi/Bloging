@@ -43,17 +43,16 @@ export default class extends AbstractView {
             <div class="form-text">Maximum of 10000 characters</div>
         </div>
         <div class="mb-3">
-            <label for="CategoryInput" class="form-label">Category</label>
-            <select id="CategoryInput" class="form-control" required>
-                <option value="" disabled selected>Select a category</option>
+        <label>Select Categories:</label>
+           <div closs="multi-select">
                 ${categories
                   .map(
                     (category) =>
-                      `<option value="${category.name}">${category.name}</option>`
+                    ` <input type="checkbox" id="technology" name=""${category.name}" value="technology">
+                        <label for="technology">${category.name}</label><br>`
                   )
                   .join("")}
-            </select>
-            <div class="form-text">Select one category</div>
+            </div>
         </div>
         <button class="btn btn-primary">Post</button>
         <div id="showError" class="error-message"></div>

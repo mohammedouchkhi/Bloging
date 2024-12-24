@@ -244,7 +244,7 @@ export default class extends AbstractView {
                         <span id="post-user-id"></span>
                     </div>
                     <h5 id="post-tags"></h5>
-                    <div class="post-content">
+                    <div class="post-card-content">
                         <p id="post-data"></p>
                     </div>
                     <div class="post-actions">

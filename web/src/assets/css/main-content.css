@@ -4,7 +4,6 @@
   max-height: 100%;
   display: flex;
   overflow: hidden;
-    
 }
 
 .posts-box{
@@ -23,22 +22,20 @@
   grid-auto-rows: max-content;
   gap: 10px;
   overflow-y: scroll;
-  scrollbar-width: thin;
-  scrollbar-width: 5px;
-  scroll-behavior: smooth;
-  scroll-snap-align: start;
   padding: 10px;
 }
 
 @media screen and (max-width: 768px) {
   .main-content {
     width: 100%;
-    height: auto;
+    height: calc(100vh - 71px);
     flex-direction: column;
     margin: 0;
+
   }
   .posts-box{
     height: 100%;
+    padding-bottom: 50px;
     width: 100%;
   }
   .posts-grid{

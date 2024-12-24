@@ -566,3 +566,193 @@ Link: 🌐 http://0.0.0.0:3030
 2024/12/24 11:59:53 2024/12/24 11:59:53 HTTP/1.1 [GET]	0.0.0.0:3030/api/posts/Database%20Technologies?limit=20&offset=0 - 204 - No Content
 2024/12/24 11:59:53 no posts found for category: Database Technologies
 2024/12/24 11:59:53 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 12:29:37 [32mServer is running...🚀
+Link: 🌐 http://0.0.0.0:3030
+2024/12/24 12:38:07 2024/12/24 12:38:07 HTTP/1.1 [POST]	10.1.13.10:3030/api/signup - 400 - Bad Request
+2024/12/24 12:38:07 bad request: password must have at least oneupper casecharacter
+2024/12/24 12:38:24 [32mServer is running...🚀
+Link: 🌐 http://0.0.0.0:3030
+2024/12/24 12:39:21 2024/12/24 12:39:21 HTTP/1.1 [GET]	0.0.0.0:3030/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 12:39:21 no posts found for category: General
+2024/12/24 12:39:21 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 12:39:51 2024/12/24 12:39:51 HTTP/1.1 [POST]	0.0.0.0:3030/api/signin - 400 - Bad Request
+2024/12/24 12:39:51 invalid password
+2024/12/24 16:07:13 [32mServer is running...🚀
+Link: 🌐 http://0.0.0.0:3030
+2024/12/24 16:07:32 2024/12/24 16:07:32 HTTP/1.1 [GET]	0.0.0.0:3030/api/posts/Database%20Technologies?limit=20&offset=0 - 204 - No Content
+2024/12/24 16:07:32 no posts found for category: Database Technologies
+2024/12/24 16:07:32 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 16:07:37 2024/12/24 16:07:37 HTTP/1.1 [GET]	0.0.0.0:3030/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 16:07:37 no posts found for category: General
+2024/12/24 16:07:37 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 16:12:07 [32mServer is running...🚀
+Link: 🌐 http://0.0.0.0:3030
+2024/12/24 16:14:59 [32mServer is running...🚀
+Link: 🌐 http://0.0.0.0:3030
+2024/12/24 16:15:21 [32mServer is running...🚀
+Link: 🌐 http://0.0.0.0:9090
+2024/12/24 16:16:12 2024/12/24 16:16:12 HTTP/1.1 [POST]	0.0.0.0:9090/api/signin - 400 - Bad Request
+2024/12/24 16:16:12 invalid email or password
+2024/12/24 16:22:48 [32mServer is running...🚀
+Link: 🌐 http://0.0.0.0:9090
+2024/12/24 16:40:49 [32mServer is running...🚀
+Link: 🌐 http://0.0.0.0:9080
+2024/12/24 16:41:06 2024/12/24 16:41:06 HTTP/1.1 [GET]	0.0.0.0:9080/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 16:41:06 no posts found for category: General
+2024/12/24 16:41:06 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 16:41:36 2024/12/24 16:41:36 HTTP/1.1 [GET]	0.0.0.0:9080/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 16:41:36 no posts found for category: General
+2024/12/24 16:41:36 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 16:41:45 2024/12/24 16:41:45 HTTP/1.1 [GET]	0.0.0.0:9080/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 16:41:45 no posts found for category: General
+2024/12/24 16:41:45 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 16:42:14 [32mServer is running...🚀
+Link: 🌐 http://0.0.0.0:9080
+2024/12/24 16:42:20 2024/12/24 16:42:20 HTTP/1.1 [GET]	0.0.0.0:9080/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 16:42:20 no posts found for category: General
+2024/12/24 16:42:20 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 16:42:29 2024/12/24 16:42:29 HTTP/1.1 [GET]	0.0.0.0:9080/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 16:42:29 no posts found for category: General
+2024/12/24 16:42:29 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 16:44:51 2024/12/24 16:44:51 HTTP/1.1 [GET]	0.0.0.0:9080/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 16:44:51 no posts found for category: General
+2024/12/24 16:44:51 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 16:45:26 2024/12/24 16:45:26 HTTP/1.1 [GET]	0.0.0.0:9080/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 16:45:26 no posts found for category: General
+2024/12/24 16:45:26 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 16:45:42 2024/12/24 16:45:42 HTTP/1.1 [GET]	0.0.0.0:9080/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 16:45:42 no posts found for category: General
+2024/12/24 16:45:42 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 16:46:12 2024/12/24 16:46:12 HTTP/1.1 [GET]	0.0.0.0:9080/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 16:46:12 no posts found for category: General
+2024/12/24 16:46:12 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 16:46:35 2024/12/24 16:46:35 HTTP/1.1 [GET]	0.0.0.0:9080/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 16:46:35 no posts found for category: General
+2024/12/24 16:46:35 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 16:47:16 2024/12/24 16:47:16 HTTP/1.1 [GET]	0.0.0.0:9080/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 16:47:16 no posts found for category: General
+2024/12/24 16:47:16 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 16:47:33 2024/12/24 16:47:33 HTTP/1.1 [GET]	0.0.0.0:9080/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 16:47:33 no posts found for category: General
+2024/12/24 16:47:33 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 16:49:14 2024/12/24 16:49:14 HTTP/1.1 [GET]	0.0.0.0:9080/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 16:49:14 no posts found for category: General
+2024/12/24 16:49:14 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 16:50:39 2024/12/24 16:50:39 HTTP/1.1 [GET]	0.0.0.0:9080/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 16:50:39 no posts found for category: General
+2024/12/24 16:50:39 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 16:52:34 2024/12/24 16:52:34 HTTP/1.1 [GET]	0.0.0.0:9080/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 16:52:34 no posts found for category: General
+2024/12/24 16:52:34 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 16:53:49 2024/12/24 16:53:49 HTTP/1.1 [GET]	0.0.0.0:9080/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 16:53:49 no posts found for category: General
+2024/12/24 16:53:49 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 16:57:54 2024/12/24 16:57:54 HTTP/1.1 [GET]	0.0.0.0:9080/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 16:57:54 no posts found for category: General
+2024/12/24 16:57:54 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 16:58:53 2024/12/24 16:58:53 HTTP/1.1 [GET]	0.0.0.0:9080/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 16:58:53 no posts found for category: General
+2024/12/24 16:58:53 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 16:59:58 2024/12/24 16:59:58 HTTP/1.1 [GET]	0.0.0.0:9080/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 16:59:58 no posts found for category: General
+2024/12/24 16:59:58 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 17:00:09 2024/12/24 17:00:09 HTTP/1.1 [GET]	0.0.0.0:9080/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 17:00:09 no posts found for category: General
+2024/12/24 17:00:09 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 17:01:01 2024/12/24 17:01:01 HTTP/1.1 [GET]	0.0.0.0:9080/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 17:01:01 no posts found for category: General
+2024/12/24 17:01:01 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 17:01:34 2024/12/24 17:01:34 HTTP/1.1 [GET]	0.0.0.0:9080/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 17:01:34 no posts found for category: General
+2024/12/24 17:01:34 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 17:01:48 2024/12/24 17:01:48 HTTP/1.1 [GET]	0.0.0.0:9080/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 17:01:48 no posts found for category: General
+2024/12/24 17:01:48 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 17:02:04 2024/12/24 17:02:04 HTTP/1.1 [GET]	0.0.0.0:9080/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 17:02:04 no posts found for category: General
+2024/12/24 17:02:04 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 17:02:08 2024/12/24 17:02:08 HTTP/1.1 [GET]	0.0.0.0:9080/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 17:02:08 no posts found for category: General
+2024/12/24 17:02:08 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 17:10:06 2024/12/24 17:10:06 HTTP/1.1 [GET]	0.0.0.0:9080/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 17:10:06 no posts found for category: General
+2024/12/24 17:10:06 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 17:13:59 2024/12/24 17:13:59 HTTP/1.1 [GET]	0.0.0.0:9080/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 17:13:59 no posts found for category: General
+2024/12/24 17:13:59 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 17:20:10 [32mServer is running...🚀
+Link: 🌐 http://0.0.0.0:9080
+2024/12/24 17:20:17 2024/12/24 17:20:17 HTTP/1.1 [GET]	0.0.0.0:9080/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 17:20:17 no posts found for category: General
+2024/12/24 17:20:17 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 17:20:58 2024/12/24 17:20:58 HTTP/1.1 [GET]	0.0.0.0:9080/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 17:20:58 no posts found for category: General
+2024/12/24 17:20:58 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 17:21:07 2024/12/24 17:21:07 HTTP/1.1 [GET]	0.0.0.0:9080/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 17:21:07 no posts found for category: General
+2024/12/24 17:21:07 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 17:25:25 2024/12/24 17:25:25 HTTP/1.1 [GET]	0.0.0.0:9080/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 17:25:25 no posts found for category: General
+2024/12/24 17:25:25 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 17:27:54 [32mServer is running...🚀
+Link: 🌐 http://0.0.0.0:9080
+2024/12/24 17:28:03 [32mServer is running...🚀
+Link: 🌐 http://0.0.0.0:9090
+2024/12/24 17:32:04 2024/12/24 17:32:04 HTTP/1.1 [GET]	0.0.0.0:9090/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 17:32:04 no posts found for category: General
+2024/12/24 17:32:04 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 17:32:17 2024/12/24 17:32:17 HTTP/1.1 [GET]	0.0.0.0:9090/api/posts/Database%20Technologies?limit=20&offset=0 - 204 - No Content
+2024/12/24 17:32:17 no posts found for category: Database Technologies
+2024/12/24 17:32:17 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 18:00:34 [32mServer is running...🚀
+Link: 🌐 http://0.0.0.0:9070
+2024/12/24 18:01:37 2024/12/24 18:01:37 HTTP/1.1 [GET]	0.0.0.0:9070/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 18:01:37 no posts found for category: General
+2024/12/24 18:01:37 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 18:01:45 2024/12/24 18:01:45 HTTP/1.1 [GET]	0.0.0.0:9070/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 18:01:45 no posts found for category: General
+2024/12/24 18:01:45 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 18:03:35 2024/12/24 18:03:35 HTTP/1.1 [GET]	0.0.0.0:9070/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 18:03:35 no posts found for category: General
+2024/12/24 18:03:35 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 18:04:06 2024/12/24 18:04:06 HTTP/1.1 [GET]	0.0.0.0:9070/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 18:04:06 no posts found for category: General
+2024/12/24 18:04:06 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 18:04:40 2024/12/24 18:04:40 HTTP/1.1 [GET]	0.0.0.0:9070/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 18:04:40 no posts found for category: General
+2024/12/24 18:04:40 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 18:05:25 2024/12/24 18:05:25 HTTP/1.1 [GET]	0.0.0.0:9070/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 18:05:25 no posts found for category: General
+2024/12/24 18:05:25 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 18:05:56 2024/12/24 18:05:56 HTTP/1.1 [GET]	0.0.0.0:9070/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 18:05:56 no posts found for category: General
+2024/12/24 18:05:56 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 18:06:36 2024/12/24 18:06:36 HTTP/1.1 [GET]	0.0.0.0:9070/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 18:06:36 no posts found for category: General
+2024/12/24 18:06:36 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 18:07:30 2024/12/24 18:07:30 HTTP/1.1 [GET]	0.0.0.0:9070/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 18:07:30 no posts found for category: General
+2024/12/24 18:07:30 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 18:07:56 2024/12/24 18:07:56 HTTP/1.1 [GET]	0.0.0.0:9070/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 18:07:56 no posts found for category: General
+2024/12/24 18:07:56 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 18:08:07 2024/12/24 18:08:07 HTTP/1.1 [GET]	0.0.0.0:9070/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 18:08:07 no posts found for category: General
+2024/12/24 18:08:07 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 18:08:16 2024/12/24 18:08:16 HTTP/1.1 [GET]	0.0.0.0:9070/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 18:08:16 no posts found for category: General
+2024/12/24 18:08:16 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 18:09:15 2024/12/24 18:09:15 HTTP/1.1 [GET]	0.0.0.0:9070/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 18:09:15 no posts found for category: General
+2024/12/24 18:09:15 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 18:16:26 2024/12/24 18:16:26 HTTP/1.1 [GET]	0.0.0.0:9070/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 18:16:26 no posts found for category: General
+2024/12/24 18:16:26 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 18:25:16 [32mServer is running...🚀
+Link: 🌐 http://0.0.0.0:9070
+2024/12/24 18:30:29 [32mServer is running...🚀
+Link: 🌐 http://0.0.0.0:7070
+2024/12/24 18:31:05 2024/12/24 18:31:05 HTTP/1.1 [POST]	0.0.0.0:7070/api/signin - 400 - Bad Request
+2024/12/24 18:31:05 invalid email or password
+2024/12/24 18:31:17 2024/12/24 18:31:17 HTTP/1.1 [POST]	0.0.0.0:7070/api/signin - 400 - Bad Request
+2024/12/24 18:31:17 invalid password

@@ -61,12 +61,14 @@
     color: var(--text-primary);
   }
 
-.form-createPost .mb-3 select{
+.form-createPost .mb-3 .multi-select{
     max-width: 100%;
-    padding: 0.8rem;
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
-    margin-bottom: 1rem;
-    background-color: var(--background-primary);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-createPost .mb-3 .multi-select input:checked + label{
+    background-color: var(--background-secondary);
     color: var(--text-primary);
 }

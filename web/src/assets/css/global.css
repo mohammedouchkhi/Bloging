@@ -19,7 +19,7 @@
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
-  background-color:va;
+  background-color:var(--background-primary);
 }
 
 ::-webkit-scrollbar-thumb {
