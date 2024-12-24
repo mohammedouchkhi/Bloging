@@ -10,18 +10,16 @@ import (
 )
 
 type PostRepository struct {
-	db *sql.DB
+	db   *sql.DB
+	keys Keys
 }
 
-func newPostRepository(db *sql.DB) *PostRepository {
-	return &PostRepository{db: db}
+func newPostRepository(db *sql.DB, keys Keys) *PostRepository {
+	return &PostRepository{db: db, keys: keys}
 }
 
 func (r *PostRepository) GetAllByCategory(ctx context.Context, categoryName string, limit, offset int) ([]entity.Post, int, error) {
-	userId := ctx.Value("id")
-	if userId == nil {
-		userId = 0
-	}
+	userId := ctx.Value(r.keys.IDKey).(int)
 
 	query := `
 SELECT
@@ -231,7 +229,7 @@ func (r *PostRepository) GetPostByID(ctx context.Context, postID uint) (entity.P
 		return post, http.StatusInternalServerError, err
 	}
 
-	userId := ctx.Value("id").(int)
+	userId := ctx.Value(r.keys.IDKey).(int)
 
 	if err := prep.QueryRowContext(ctx, userId, postID).Scan(&post.PostID, &post.UserID, &post.Title, &post.Data, &post.UserName, &post.Likes, &post.Dislikes, &post.VoteStatus); err != nil {
 		return post, http.StatusNotFound, err
@@ -281,7 +279,7 @@ func (r *PostRepository) getCommentsByPostID(ctx context.Context, postID uint) (
 	}
 	defer prep.Close()
 
-	userId := ctx.Value("id")
+	userId := ctx.Value(r.keys.IDKey)
 	if userId == nil {
 		userId = 0
 	}

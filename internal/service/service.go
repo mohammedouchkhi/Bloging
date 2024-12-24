@@ -42,6 +42,7 @@ type Service struct {
 	Post
 	Comment
 	Category
+	repository.Keys
 }
 
 func NewService(repo *repository.Repository, secret string) *Service {
@@ -51,5 +52,6 @@ func NewService(repo *repository.Repository, secret string) *Service {
 		Post:     newPostService(repo.Post, repo.Category),
 		Comment:  newCommentService(repo.Comment),
 		Category: newCategoryService(repo.Category),
+		Keys:     repo.Keys,
 	}
 }

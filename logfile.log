@@ -131,3 +131,438 @@ Link: 🌐 http://0.0.0.0:9090
 2024/12/23 18:35:52 invalid email or password
 2024/12/23 18:53:32 [32mServer is running...🚀
 Link: 🌐 http://0.0.0.0:3030
+2024/12/24 11:29:08 [32mServer is running...🚀
+Link: 🌐 http://0.0.0.0:3030
+2024/12/24 11:29:16 http: panic serving 127.0.0.1:48688: interface conversion: interface {} is nil, not int
+goroutine 18 [running]:
+net/http.(*conn).serve.func1()
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:1947 +0xbe
+panic({0x8cf3a0?, 0xc0001b1680?})
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/runtime/panic.go:785 +0x132
+forum/internal/repository.(*PostRepository).GetPostByID(0xc000118020, {0x9db258, 0xc0001b15f0}, 0x14)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/repository/post.go:234 +0x410
+forum/internal/service.(*PostService).GetPostByID(0x0?, {0x9db258?, 0xc0001b15f0?}, 0x30?)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/service/post.go:73 +0x83
+forum/internal/controller/http1.(*Handler).getPostbyID(0xc000124080, {0x9dab18, 0xc0000ca380}, 0xc0000d2c80)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/post.go:52 +0x139
+forum/internal/controller/http1.(*Handler).InitRoutes.(*Handler).identify.func6({0x9dab18, 0xc0000ca380}, 0xc0000d2a00)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/middleware.go:86 +0x588
+net/http.HandlerFunc.ServeHTTP(0xc0001b1500?, {0x9dab18?, 0xc0000ca380?}, 0x9383b3?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+forum/internal/controller/http1.(*Handler).InitRoutes.(*Handler).corsMiddleWare.func7({0x9dab18, 0xc0000ca380}, 0xc0000d2a00)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/middleware.go:27 +0x13f
+net/http.HandlerFunc.ServeHTTP(0x8c7260?, {0x9dab18?, 0xc0000ca380?}, 0xf?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+forum/internal/controller/http1.(*Handler).InitRoutes.(*RateLimiter).Limiter.func8({0x9dab18, 0xc0000ca380}, 0xc0000d2a00)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/rateLimiter.go:69 +0x232
+net/http.HandlerFunc.ServeHTTP(0xc000128000?, {0x9dab18?, 0xc0000ca380?}, 0x6ed756?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46bfb9?, {0x9dab18, 0xc0000ca380}, 0xc0000d2a00)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0xc00011a900?}, {0x9dab18?, 0xc0000ca380?}, 0x6?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc00011e120, {0x9db258, 0xc00011a810})
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:3360 +0x485
+2024/12/24 11:29:16 http: panic serving 127.0.0.1:48716: interface conversion: interface {} is nil, not int
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:1947 +0xbe
+panic({0x8cf3a0?, 0xc0001b1860?})
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/runtime/panic.go:785 +0x132
+forum/internal/repository.(*PostRepository).GetPostByID(0xc000118020, {0x9db258, 0xc0001b17d0}, 0x14)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/repository/post.go:234 +0x410
+forum/internal/service.(*PostService).GetPostByID(0x0?, {0x9db258?, 0xc0001b17d0?}, 0x30?)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/service/post.go:73 +0x83
+forum/internal/controller/http1.(*Handler).getPostbyID(0xc000124080, {0x9dab18, 0xc0000ca460}, 0xc0000d3040)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/post.go:52 +0x139
+forum/internal/controller/http1.(*Handler).InitRoutes.(*Handler).identify.func6({0x9dab18, 0xc0000ca460}, 0xc0000d2dc0)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/middleware.go:86 +0x588
+net/http.HandlerFunc.ServeHTTP(0xc0001b16e0?, {0x9dab18?, 0xc0000ca460?}, 0x9383b3?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+forum/internal/controller/http1.(*Handler).InitRoutes.(*Handler).corsMiddleWare.func7({0x9dab18, 0xc0000ca460}, 0xc0000d2dc0)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/middleware.go:27 +0x13f
+net/http.HandlerFunc.ServeHTTP(0x8c7260?, {0x9dab18?, 0xc0000ca460?}, 0xf?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+forum/internal/controller/http1.(*Handler).InitRoutes.(*RateLimiter).Limiter.func8({0x9dab18, 0xc0000ca460}, 0xc0000d2dc0)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/rateLimiter.go:69 +0x232
+net/http.HandlerFunc.ServeHTTP(0xc000128000?, {0x9dab18?, 0xc0000ca460?}, 0x6ed756?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46bfb9?, {0x9dab18, 0xc0000ca460}, 0xc0000d2dc0)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0xc000204510?}, {0x9dab18?, 0xc0000ca460?}, 0x6?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc000202360, {0x9db258, 0xc00011a810})
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:3360 +0x485
+2024/12/24 11:29:16 http: panic serving 127.0.0.1:48696: interface conversion: interface {} is nil, not int
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:1947 +0xbe
+panic({0x8cf3a0?, 0xc0001b1aa0?})
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/runtime/panic.go:785 +0x132
+forum/internal/repository.(*PostRepository).GetPostByID(0xc000118020, {0x9db258, 0xc0001b1a10}, 0x14)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/repository/post.go:234 +0x410
+forum/internal/service.(*PostService).GetPostByID(0x0?, {0x9db258?, 0xc0001b1a10?}, 0x30?)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/service/post.go:73 +0x83
+forum/internal/controller/http1.(*Handler).getPostbyID(0xc000124080, {0x9dab18, 0xc0000ca540}, 0xc0000d3400)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/post.go:52 +0x139
+forum/internal/controller/http1.(*Handler).InitRoutes.(*Handler).identify.func6({0x9dab18, 0xc0000ca540}, 0xc0000d3180)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/middleware.go:86 +0x588
+net/http.HandlerFunc.ServeHTTP(0xc0001b1920?, {0x9dab18?, 0xc0000ca540?}, 0x9383b3?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+forum/internal/controller/http1.(*Handler).InitRoutes.(*Handler).corsMiddleWare.func7({0x9dab18, 0xc0000ca540}, 0xc0000d3180)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/middleware.go:27 +0x13f
+net/http.HandlerFunc.ServeHTTP(0x8c7260?, {0x9dab18?, 0xc0000ca540?}, 0xf?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+forum/internal/controller/http1.(*Handler).InitRoutes.(*RateLimiter).Limiter.func8({0x9dab18, 0xc0000ca540}, 0xc0000d3180)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/rateLimiter.go:69 +0x232
+net/http.HandlerFunc.ServeHTTP(0xc000128000?, {0x9dab18?, 0xc0000ca540?}, 0x6ed756?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46bfb9?, {0x9dab18, 0xc0000ca540}, 0xc0000d3180)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0xc000204300?}, {0x9dab18?, 0xc0000ca540?}, 0x6?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc0000d47e0, {0x9db258, 0xc00011a810})
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:3360 +0x485
+2024/12/24 11:29:16 http: panic serving 127.0.0.1:48732: interface conversion: interface {} is nil, not int
+goroutine 37 [running]:
+net/http.(*conn).serve.func1()
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:1947 +0xbe
+panic({0x8cf3a0?, 0xc000429320?})
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/runtime/panic.go:785 +0x132
+forum/internal/repository.(*PostRepository).GetPostByID(0xc000118020, {0x9db258, 0xc000429290}, 0x14)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/repository/post.go:234 +0x410
+forum/internal/service.(*PostService).GetPostByID(0x0?, {0x9db258?, 0xc000429290?}, 0x30?)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/service/post.go:73 +0x83
+forum/internal/controller/http1.(*Handler).getPostbyID(0xc000124080, {0x9dab18, 0xc000432620}, 0xc000423180)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/post.go:52 +0x139
+forum/internal/controller/http1.(*Handler).InitRoutes.(*Handler).identify.func6({0x9dab18, 0xc000432620}, 0xc000422f00)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/middleware.go:86 +0x588
+net/http.HandlerFunc.ServeHTTP(0xc0004291a0?, {0x9dab18?, 0xc000432620?}, 0x9383b3?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+forum/internal/controller/http1.(*Handler).InitRoutes.(*Handler).corsMiddleWare.func7({0x9dab18, 0xc000432620}, 0xc000422f00)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/middleware.go:27 +0x13f
+net/http.HandlerFunc.ServeHTTP(0x8c7260?, {0x9dab18?, 0xc000432620?}, 0xf?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+forum/internal/controller/http1.(*Handler).InitRoutes.(*RateLimiter).Limiter.func8({0x9dab18, 0xc000432620}, 0xc000422f00)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/rateLimiter.go:69 +0x232
+net/http.HandlerFunc.ServeHTTP(0xc000128000?, {0x9dab18?, 0xc000432620?}, 0x6ed756?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46bfb9?, {0x9dab18, 0xc000432620}, 0xc000422f00)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0xc000204600?}, {0x9dab18?, 0xc000432620?}, 0x6?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc0002023f0, {0x9db258, 0xc00011a810})
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:3360 +0x485
+2024/12/24 11:29:16 http: panic serving 127.0.0.1:48714: interface conversion: interface {} is nil, not int
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:1947 +0xbe
+panic({0x8cf3a0?, 0xc000429500?})
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/runtime/panic.go:785 +0x132
+forum/internal/repository.(*PostRepository).GetPostByID(0xc000118020, {0x9db258, 0xc000429470}, 0x14)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/repository/post.go:234 +0x410
+forum/internal/service.(*PostService).GetPostByID(0x0?, {0x9db258?, 0xc000429470?}, 0x30?)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/service/post.go:73 +0x83
+forum/internal/controller/http1.(*Handler).getPostbyID(0xc000124080, {0x9dab18, 0xc000432700}, 0xc000423540)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/post.go:52 +0x139
+forum/internal/controller/http1.(*Handler).InitRoutes.(*Handler).identify.func6({0x9dab18, 0xc000432700}, 0xc0004232c0)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/middleware.go:86 +0x588
+net/http.HandlerFunc.ServeHTTP(0xc000429380?, {0x9dab18?, 0xc000432700?}, 0x9383b3?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+forum/internal/controller/http1.(*Handler).InitRoutes.(*Handler).corsMiddleWare.func7({0x9dab18, 0xc000432700}, 0xc0004232c0)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/middleware.go:27 +0x13f
+net/http.HandlerFunc.ServeHTTP(0x8c7260?, {0x9dab18?, 0xc000432700?}, 0xf?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+forum/internal/controller/http1.(*Handler).InitRoutes.(*RateLimiter).Limiter.func8({0x9dab18, 0xc000432700}, 0xc0004232c0)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/rateLimiter.go:69 +0x232
+net/http.HandlerFunc.ServeHTTP(0xc000128000?, {0x9dab18?, 0xc000432700?}, 0x6ed756?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46bfb9?, {0x9dab18, 0xc000432700}, 0xc0004232c0)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0xc000204450?}, {0x9dab18?, 0xc000432700?}, 0x6?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc00011e480, {0x9db258, 0xc00011a810})
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:3360 +0x485
+2024/12/24 11:29:16 http: panic serving 127.0.0.1:48700: interface conversion: interface {} is nil, not int
+goroutine 52 [running]:
+net/http.(*conn).serve.func1()
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:1947 +0xbe
+panic({0x8cf3a0?, 0xc000429740?})
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/runtime/panic.go:785 +0x132
+forum/internal/repository.(*PostRepository).GetPostByID(0xc000118020, {0x9db258, 0xc0004296b0}, 0x14)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/repository/post.go:234 +0x410
+forum/internal/service.(*PostService).GetPostByID(0x0?, {0x9db258?, 0xc0004296b0?}, 0x30?)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/service/post.go:73 +0x83
+forum/internal/controller/http1.(*Handler).getPostbyID(0xc000124080, {0x9dab18, 0xc0004327e0}, 0xc000423900)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/post.go:52 +0x139
+forum/internal/controller/http1.(*Handler).InitRoutes.(*Handler).identify.func6({0x9dab18, 0xc0004327e0}, 0xc000423680)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/middleware.go:86 +0x588
+net/http.HandlerFunc.ServeHTTP(0xc0004295c0?, {0x9dab18?, 0xc0004327e0?}, 0x9383b3?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+forum/internal/controller/http1.(*Handler).InitRoutes.(*Handler).corsMiddleWare.func7({0x9dab18, 0xc0004327e0}, 0xc000423680)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/middleware.go:27 +0x13f
+net/http.HandlerFunc.ServeHTTP(0x8c7260?, {0x9dab18?, 0xc0004327e0?}, 0xf?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+forum/internal/controller/http1.(*Handler).InitRoutes.(*RateLimiter).Limiter.func8({0x9dab18, 0xc0004327e0}, 0xc000423680)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/rateLimiter.go:69 +0x232
+net/http.HandlerFunc.ServeHTTP(0xc000128000?, {0x9dab18?, 0xc0004327e0?}, 0x6ed756?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46bfb9?, {0x9dab18, 0xc0004327e0}, 0xc000423680)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0xc000380240?}, {0x9dab18?, 0xc0004327e0?}, 0x6?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc000386240, {0x9db258, 0xc00011a810})
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:3360 +0x485
+2024/12/24 11:29:16 http: panic serving 127.0.0.1:48748: interface conversion: interface {} is nil, not int
+goroutine 181 [running]:
+net/http.(*conn).serve.func1()
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:1947 +0xbe
+panic({0x8cf3a0?, 0xc000429a10?})
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/runtime/panic.go:785 +0x132
+forum/internal/repository.(*PostRepository).GetPostByID(0xc000118020, {0x9db258, 0xc000429980}, 0x14)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/repository/post.go:234 +0x410
+forum/internal/service.(*PostService).GetPostByID(0x0?, {0x9db258?, 0xc000429980?}, 0x30?)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/service/post.go:73 +0x83
+forum/internal/controller/http1.(*Handler).getPostbyID(0xc000124080, {0x9dab18, 0xc0004328c0}, 0xc000423cc0)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/post.go:52 +0x139
+forum/internal/controller/http1.(*Handler).InitRoutes.(*Handler).identify.func6({0x9dab18, 0xc0004328c0}, 0xc000423a40)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/middleware.go:86 +0x588
+net/http.HandlerFunc.ServeHTTP(0xc000429890?, {0x9dab18?, 0xc0004328c0?}, 0x9383b3?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+forum/internal/controller/http1.(*Handler).InitRoutes.(*Handler).corsMiddleWare.func7({0x9dab18, 0xc0004328c0}, 0xc000423a40)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/middleware.go:27 +0x13f
+net/http.HandlerFunc.ServeHTTP(0x8c7260?, {0x9dab18?, 0xc0004328c0?}, 0xf?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+forum/internal/controller/http1.(*Handler).InitRoutes.(*RateLimiter).Limiter.func8({0x9dab18, 0xc0004328c0}, 0xc000423a40)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/rateLimiter.go:69 +0x232
+net/http.HandlerFunc.ServeHTTP(0xc000128000?, {0x9dab18?, 0xc0004328c0?}, 0x6ed756?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x46bfb9?, {0x9dab18, 0xc0004328c0}, 0xc000423a40)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0xc000429800?}, {0x9dab18?, 0xc0004328c0?}, 0x6?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc000427440, {0x9db258, 0xc00011a810})
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:3360 +0x485
+2024/12/24 11:56:34 [32mServer is running...🚀
+Link: 🌐 http://0.0.0.0:3030
+2024/12/24 11:56:44 http: panic serving 127.0.0.1:34410: interface conversion: interface {} is nil, not int
+goroutine 38 [running]:
+net/http.(*conn).serve.func1()
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:1947 +0xbe
+panic({0x8cf420?, 0xc0002e4630?})
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/runtime/panic.go:785 +0x132
+forum/internal/controller/http1.(*Handler).votePost(0xc0001900a0, {0x9dacb8, 0xc0000ca380}, 0xc0000d2b40)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/post.go:97 +0x2f8
+forum/internal/controller/http1.(*Handler).InitRoutes.(*Handler).identify.func6({0x9dacb8, 0xc0000ca380}, 0xc0000d28c0)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/middleware.go:62 +0x3c2
+net/http.HandlerFunc.ServeHTTP(0xc0002e43f0?, {0x9dacb8?, 0xc0000ca380?}, 0x938513?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+forum/internal/controller/http1.(*Handler).InitRoutes.(*Handler).corsMiddleWare.func7({0x9dacb8, 0xc0000ca380}, 0xc0000d28c0)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/middleware.go:21 +0x13f
+net/http.HandlerFunc.ServeHTTP(0x8c72e0?, {0x9dacb8?, 0xc0000ca380?}, 0xf?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+forum/internal/controller/http1.(*Handler).InitRoutes.(*RateLimiter).Limiter.func8({0x9dacb8, 0xc0000ca380}, 0xc0000d28c0)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/rateLimiter.go:69 +0x232
+net/http.HandlerFunc.ServeHTTP(0xc000196000?, {0x9dacb8?, 0xc0000ca380?}, 0x1?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x413c45?, {0x9dacb8, 0xc0000ca380}, 0xc0000d28c0)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x9d9910?}, {0x9dacb8?, 0xc0000ca380?}, 0x6?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc00011c2d0, {0x9db3f8, 0xc0001868a0})
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:3360 +0x485
+2024/12/24 11:56:44 http: panic serving 127.0.0.1:34392: interface conversion: interface {} is nil, not int
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:1947 +0xbe
+panic({0x8cf420?, 0xc000409b30?})
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/runtime/panic.go:785 +0x132
+forum/internal/controller/http1.(*Handler).votePost(0xc0001900a0, {0x9dacb8, 0xc0004180e0}, 0xc000402640)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/post.go:97 +0x2f8
+forum/internal/controller/http1.(*Handler).InitRoutes.(*Handler).identify.func6({0x9dacb8, 0xc0004180e0}, 0xc0004023c0)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/middleware.go:62 +0x3c2
+net/http.HandlerFunc.ServeHTTP(0xc000409920?, {0x9dacb8?, 0xc0004180e0?}, 0x938513?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+forum/internal/controller/http1.(*Handler).InitRoutes.(*Handler).corsMiddleWare.func7({0x9dacb8, 0xc0004180e0}, 0xc0004023c0)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/middleware.go:21 +0x13f
+net/http.HandlerFunc.ServeHTTP(0x8c72e0?, {0x9dacb8?, 0xc0004180e0?}, 0xf?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+forum/internal/controller/http1.(*Handler).InitRoutes.(*RateLimiter).Limiter.func8({0x9dacb8, 0xc0004180e0}, 0xc0004023c0)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/rateLimiter.go:69 +0x232
+net/http.HandlerFunc.ServeHTTP(0xc000196000?, {0x9dacb8?, 0xc0004180e0?}, 0x0?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x413c45?, {0x9dacb8, 0xc0004180e0}, 0xc0004023c0)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x9d9910?}, {0x9dacb8?, 0xc0004180e0?}, 0x6?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc00018a750, {0x9db3f8, 0xc0001868a0})
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:3360 +0x485
+2024/12/24 11:56:44 http: panic serving 127.0.0.1:34364: interface conversion: interface {} is nil, not int
+goroutine 18 [running]:
+net/http.(*conn).serve.func1()
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:1947 +0xbe
+panic({0x8cf420?, 0xc000409da0?})
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/runtime/panic.go:785 +0x132
+forum/internal/controller/http1.(*Handler).votePost(0xc0001900a0, {0x9dacb8, 0xc0004181c0}, 0xc000402a00)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/post.go:97 +0x2f8
+forum/internal/controller/http1.(*Handler).InitRoutes.(*Handler).identify.func6({0x9dacb8, 0xc0004181c0}, 0xc000402780)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/middleware.go:62 +0x3c2
+net/http.HandlerFunc.ServeHTTP(0xc000409b90?, {0x9dacb8?, 0xc0004181c0?}, 0x938513?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+forum/internal/controller/http1.(*Handler).InitRoutes.(*Handler).corsMiddleWare.func7({0x9dacb8, 0xc0004181c0}, 0xc000402780)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/middleware.go:21 +0x13f
+net/http.HandlerFunc.ServeHTTP(0x8c72e0?, {0x9dacb8?, 0xc0004181c0?}, 0xf?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+forum/internal/controller/http1.(*Handler).InitRoutes.(*RateLimiter).Limiter.func8({0x9dacb8, 0xc0004181c0}, 0xc000402780)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/rateLimiter.go:69 +0x232
+net/http.HandlerFunc.ServeHTTP(0xc000196000?, {0x9dacb8?, 0xc0004181c0?}, 0x0?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x413c45?, {0x9dacb8, 0xc0004181c0}, 0xc000402780)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x9d9910?}, {0x9dacb8?, 0xc0004181c0?}, 0x6?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc00018a1b0, {0x9db3f8, 0xc0001868a0})
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:3360 +0x485
+2024/12/24 11:56:44 http: panic serving 127.0.0.1:34396: interface conversion: interface {} is nil, not int
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:1947 +0xbe
+panic({0x8cf420?, 0xc0005140f0?})
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/runtime/panic.go:785 +0x132
+forum/internal/controller/http1.(*Handler).votePost(0xc0001900a0, {0x9dacb8, 0xc0004182a0}, 0xc000402dc0)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/post.go:97 +0x2f8
+forum/internal/controller/http1.(*Handler).InitRoutes.(*Handler).identify.func6({0x9dacb8, 0xc0004182a0}, 0xc000402b40)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/middleware.go:62 +0x3c2
+net/http.HandlerFunc.ServeHTTP(0xc000409e60?, {0x9dacb8?, 0xc0004182a0?}, 0x938513?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+forum/internal/controller/http1.(*Handler).InitRoutes.(*Handler).corsMiddleWare.func7({0x9dacb8, 0xc0004182a0}, 0xc000402b40)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/middleware.go:21 +0x13f
+net/http.HandlerFunc.ServeHTTP(0x8c72e0?, {0x9dacb8?, 0xc0004182a0?}, 0xf?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+forum/internal/controller/http1.(*Handler).InitRoutes.(*RateLimiter).Limiter.func8({0x9dacb8, 0xc0004182a0}, 0xc000402b40)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/rateLimiter.go:69 +0x232
+net/http.HandlerFunc.ServeHTTP(0xc000196000?, {0x9dacb8?, 0xc0004182a0?}, 0x0?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x413c45?, {0x9dacb8, 0xc0004182a0}, 0xc000402b40)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x9d9910?}, {0x9dacb8?, 0xc0004182a0?}, 0x6?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc00011c090, {0x9db3f8, 0xc0001868a0})
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:3360 +0x485
+2024/12/24 11:56:44 http: panic serving 127.0.0.1:34408: interface conversion: interface {} is nil, not int
+goroutine 37 [running]:
+net/http.(*conn).serve.func1()
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:1947 +0xbe
+panic({0x8cf420?, 0xc000514360?})
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/runtime/panic.go:785 +0x132
+forum/internal/controller/http1.(*Handler).votePost(0xc0001900a0, {0x9dacb8, 0xc000418380}, 0xc000403180)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/post.go:97 +0x2f8
+forum/internal/controller/http1.(*Handler).InitRoutes.(*Handler).identify.func6({0x9dacb8, 0xc000418380}, 0xc000402f00)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/middleware.go:62 +0x3c2
+net/http.HandlerFunc.ServeHTTP(0xc000514150?, {0x9dacb8?, 0xc000418380?}, 0x938513?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+forum/internal/controller/http1.(*Handler).InitRoutes.(*Handler).corsMiddleWare.func7({0x9dacb8, 0xc000418380}, 0xc000402f00)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/middleware.go:21 +0x13f
+net/http.HandlerFunc.ServeHTTP(0x8c72e0?, {0x9dacb8?, 0xc000418380?}, 0xf?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+forum/internal/controller/http1.(*Handler).InitRoutes.(*RateLimiter).Limiter.func8({0x9dacb8, 0xc000418380}, 0xc000402f00)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/rateLimiter.go:69 +0x232
+net/http.HandlerFunc.ServeHTTP(0xc000196000?, {0x9dacb8?, 0xc000418380?}, 0x1?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x413c45?, {0x9dacb8, 0xc000418380}, 0xc000402f00)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x9d9910?}, {0x9dacb8?, 0xc000418380?}, 0x6?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc00011c240, {0x9db3f8, 0xc0001868a0})
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:3360 +0x485
+2024/12/24 11:56:44 http: panic serving 127.0.0.1:34380: interface conversion: interface {} is nil, not int
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:1947 +0xbe
+panic({0x8cf420?, 0xc0005145d0?})
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/runtime/panic.go:785 +0x132
+forum/internal/controller/http1.(*Handler).votePost(0xc0001900a0, {0x9dacb8, 0xc000418460}, 0xc000403540)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/post.go:97 +0x2f8
+forum/internal/controller/http1.(*Handler).InitRoutes.(*Handler).identify.func6({0x9dacb8, 0xc000418460}, 0xc0004032c0)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/middleware.go:62 +0x3c2
+net/http.HandlerFunc.ServeHTTP(0xc0005143c0?, {0x9dacb8?, 0xc000418460?}, 0x938513?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+forum/internal/controller/http1.(*Handler).InitRoutes.(*Handler).corsMiddleWare.func7({0x9dacb8, 0xc000418460}, 0xc0004032c0)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/middleware.go:21 +0x13f
+net/http.HandlerFunc.ServeHTTP(0x8c72e0?, {0x9dacb8?, 0xc000418460?}, 0xf?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+forum/internal/controller/http1.(*Handler).InitRoutes.(*RateLimiter).Limiter.func8({0x9dacb8, 0xc000418460}, 0xc0004032c0)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/rateLimiter.go:69 +0x232
+net/http.HandlerFunc.ServeHTTP(0xc000196000?, {0x9dacb8?, 0xc000418460?}, 0x1?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x413c45?, {0x9dacb8, 0xc000418460}, 0xc0004032c0)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x9d9910?}, {0x9dacb8?, 0xc000418460?}, 0x6?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc00011c000, {0x9db3f8, 0xc0001868a0})
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:3360 +0x485
+2024/12/24 11:56:44 http: panic serving 127.0.0.1:34420: interface conversion: interface {} is nil, not int
+goroutine 194 [running]:
+net/http.(*conn).serve.func1()
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:1947 +0xbe
+panic({0x8cf420?, 0xc000187dd0?})
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/runtime/panic.go:785 +0x132
+forum/internal/controller/http1.(*Handler).votePost(0xc0001900a0, {0x9dacb8, 0xc0001968c0}, 0xc0001cd680)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/post.go:97 +0x2f8
+forum/internal/controller/http1.(*Handler).InitRoutes.(*Handler).identify.func6({0x9dacb8, 0xc0001968c0}, 0xc0001cd400)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/middleware.go:62 +0x3c2
+net/http.HandlerFunc.ServeHTTP(0xc000187bc0?, {0x9dacb8?, 0xc0001968c0?}, 0x938513?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+forum/internal/controller/http1.(*Handler).InitRoutes.(*Handler).corsMiddleWare.func7({0x9dacb8, 0xc0001968c0}, 0xc0001cd400)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/middleware.go:21 +0x13f
+net/http.HandlerFunc.ServeHTTP(0x8c72e0?, {0x9dacb8?, 0xc0001968c0?}, 0xf?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+forum/internal/controller/http1.(*Handler).InitRoutes.(*RateLimiter).Limiter.func8({0x9dacb8, 0xc0001968c0}, 0xc0001cd400)
+	/home/oamyay/Desktop/zone_01/go/ForumV2/internal/controller/http1/rateLimiter.go:69 +0x232
+net/http.HandlerFunc.ServeHTTP(0xc000196000?, {0x9dacb8?, 0xc0001968c0?}, 0x0?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x413c45?, {0x9dacb8, 0xc0001968c0}, 0xc0001cd400)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x9d9910?}, {0x9dacb8?, 0xc0001968c0?}, 0x6?)
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc000526480, {0x9db3f8, 0xc0001868a0})
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/home/oamyay/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.3.linux-amd64/src/net/http/server.go:3360 +0x485
+2024/12/24 11:58:12 [32mServer is running...🚀
+Link: 🌐 http://0.0.0.0:3030
+2024/12/24 11:59:52 2024/12/24 11:59:52 HTTP/1.1 [GET]	0.0.0.0:3030/api/posts/Programming%20Languages?limit=20&offset=0 - 204 - No Content
+2024/12/24 11:59:52 no posts found for category: Programming Languages
+2024/12/24 11:59:52 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 11:59:52 2024/12/24 11:59:52 HTTP/1.1 [GET]	0.0.0.0:3030/api/posts/Software%20Engineering?limit=20&offset=0 - 204 - No Content
+2024/12/24 11:59:52 no posts found for category: Software Engineering
+2024/12/24 11:59:52 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 11:59:53 2024/12/24 11:59:53 HTTP/1.1 [GET]	0.0.0.0:3030/api/posts/Database%20Technologies?limit=20&offset=0 - 204 - No Content
+2024/12/24 11:59:53 no posts found for category: Database Technologies
+2024/12/24 11:59:53 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)

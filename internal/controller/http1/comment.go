@@ -12,7 +12,7 @@ func (h *Handler) createComment(w http.ResponseWriter, r *http.Request) {
 		h.errorHandler(w, r, http.StatusMethodNotAllowed, "not allowed method")
 		return
 	}
-	userID := r.Context().Value("id").(int)
+	userID := r.Context().Value(h.service.IDKey).(int)
 	if userID < 0 {
 		h.errorHandler(w, r, http.StatusUnauthorized, "invalid id")
 		return
@@ -35,7 +35,7 @@ func (h *Handler) voteComment(w http.ResponseWriter, r *http.Request) {
 		h.errorHandler(w, r, http.StatusMethodNotAllowed, "not allowed method")
 		return
 	}
-	userID := r.Context().Value("id").(int)
+	userID := r.Context().Value(h.service.IDKey).(int)
 	if userID < 0 {
 		h.errorHandler(w, r, http.StatusUnauthorized, "invalid id")
 		return

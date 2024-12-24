@@ -10,7 +10,6 @@ import (
 type User interface {
 	Create(ctx context.Context, user entity.User) (int, error)
 	GetUserIDByEmail(ctx context.Context, email string) (entity.User, int, error)
-	// GetUserByID(ctx context.Context, userID uint) (entity.User, int, error)
 }
 
 type Session interface {
@@ -43,20 +42,33 @@ type Comment interface {
 	UpsertCommentVote(ctx context.Context, input entity.CommentVote) (int, error)
 }
 
+type key string
+
+type Keys struct {
+	IDKey    key
+	TokenKey key
+}
+
 type Repository struct {
 	Post
 	User
 	Session
 	Category
 	Comment
+	Keys
 }
 
 func NewRepository(db *sql.DB) *Repository {
+	Keys := Keys{
+		IDKey:    "id",
+		TokenKey: "token",
+	}
 	return &Repository{
 		User:     newUserRepository(db),
 		Session:  newSessionRepository(db),
-		Post:     newPostRepository(db),
+		Post:     newPostRepository(db, Keys),
 		Category: newCategoryRepository(db),
 		Comment:  newCommentRepository(db),
+		Keys:     Keys,
 	}
 }

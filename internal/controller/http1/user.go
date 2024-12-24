@@ -125,7 +125,7 @@ func (h *Handler) signOut(w http.ResponseWriter, r *http.Request) {
 		h.errorHandler(w, r, http.StatusMethodNotAllowed, "not allowed method")
 		return
 	}
-	token := r.Context().Value("token").(string)
+	token := r.Context().Value(h.service.TokenKey).(string)
 	if err := h.service.DeleteSessionByToken(r.Context(), token); err != nil {
 		h.errorHandler(w, r, http.StatusInternalServerError, err.Error())
 		return
