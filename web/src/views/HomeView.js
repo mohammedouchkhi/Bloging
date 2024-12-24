@@ -8,7 +8,7 @@ let limit = 20;
 let ended = false;
 
 const getPostsByCategory = async (category) => {
-  const posts = await fetcher.get(
+  let posts = await fetcher.get(
     `${path}${category}?limit=${limit}&offset=${offset}`
   );
   const postsDoc = document.querySelector(".posts-grid");
@@ -23,12 +23,14 @@ const getPostsByCategory = async (category) => {
     return;
   }
   if (posts?.length) {
+    posts.sort((a, b) => a.post_id - b.post_id);
     for (let i = posts.length - 1; i >= 0; i--) {
       const post = posts[i];
       const el = newPostElement(post);
       postsDoc.append(el);
+      console.log(post.post_id);
     }
-    offset += 20;
+    offset += posts.length;
   } else {
     if (offset > 0) {
       ended = true;
@@ -256,7 +258,7 @@ const updatePostInList = async (postId) => {
 
     updateCount("like-button", updatedPost.likes);
     updateCount("dislike-button", updatedPost.dislikes);
-    
+
     const likeButton = postCard.querySelector(".like-button");
     const dislikeButton = postCard.querySelector(".dislike-button");
 
@@ -386,7 +388,12 @@ async function handleScroll() {
   isThrottled = true;
 
   setTimeout(async () => {
-    if (window.scrollY + window.innerHeight >= document.body.offsetHeight) {
+    const postsContainer = document.getElementById("posts");
+
+    if (
+      postsContainer.scrollTop + postsContainer.clientHeight >=
+      postsContainer.scrollHeight
+    ) {
       console.log("Reached the bottom of the page.");
       // Load more posts
       const user = Utils.getUser();

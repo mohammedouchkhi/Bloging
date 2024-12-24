@@ -48,14 +48,13 @@ export default class extends AbstractView {
                 ${categories
                   .map(
                     (category) =>
-                    ` <input type="checkbox" id="${category.name}" name="${category.name}" value="${category.name}">
+                      ` <input type="checkbox" id="${category.name}" name="${category.name}" value="${category.name}">
                         <label for="${category.name}">${category.name}</label><br>`
                   )
                   .join("")}
             </div>
         </div>
-        <button class="btn btn-primary">
-        Post</button>
+        <button class="btn btn-primary">Post</button>
         <div id="showError" class="error-message"></div>
         </form>
         </div>
@@ -69,17 +68,24 @@ export default class extends AbstractView {
 
       const title = document.getElementById("TitleInput").value.trim();
       const data = document.getElementById("TextInput").value.trim();
-      const categorySelect = document.getElementById("CategoryInput");
-      const category = categorySelect.value;
+
+      const getCheckedCategories = () => {
+        const checkedCheckboxes = document.querySelectorAll(
+          '.multi-select input[type="checkbox"]:checked'
+        );
+        return Array.from(checkedCheckboxes).map((checkbox) => checkbox?.value);
+      };
+
+      const categories = getCheckedCategories();
 
       // Validate inputs
-      if (!title || !data || !category) {
+      if (!title || !data || !categories?.length) {
         document.getElementById("showError").textContent =
           "Please fill in all fields";
         return;
       }
 
-      createPost(title, data, [category]);
+      createPost(title, data, categories);
     });
   }
 }

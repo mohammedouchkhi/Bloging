@@ -43,7 +43,7 @@ FROM
     INNER JOIN users u ON u.id = p.user_id
     INNER JOIN category t ON tp.category_id = t.id
 WHERE t.name = $2
-ORDER BY p.id
+ORDER BY p.id DESC
 LIMIT $3 OFFSET $4;
 `
 
