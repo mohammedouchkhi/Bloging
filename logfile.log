@@ -986,3 +986,11 @@ Link: 🌐 http://localhost:8080
 2024/12/24 18:34:12 2024/12/24 18:34:12 HTTP/1.1 [GET]	localhost:8080/api/posts/General?limit=20&offset=120 - 204 - No Content
 2024/12/24 18:34:12 no posts found for category: General
 2024/12/24 18:34:12 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 18:35:44 [32mServer is running...🚀
+Link: 🌐 http://localhost:8080
+2024/12/24 18:36:58 [32mServer is running...🚀
+Link: 🌐 http://localhost:8080
+2024/12/24 18:38:41 [32mServer is running...🚀
+Link: 🌐 http://localhost:8090
+2024/12/24 18:39:14 [32mServer is running...🚀
+Link: 🌐 http://localhost:8090

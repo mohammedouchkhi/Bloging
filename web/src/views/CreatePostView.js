@@ -44,17 +44,18 @@ export default class extends AbstractView {
         </div>
         <div class="mb-3">
         <label>Select Categories:</label>
-           <div closs="multi-select">
+           <div class="multi-select">
                 ${categories
                   .map(
                     (category) =>
-                    ` <input type="checkbox" id="technology" name=""${category.name}" value="technology">
-                        <label for="technology">${category.name}</label><br>`
+                    ` <input type="checkbox" id="${category.name}" name="${category.name}" value="${category.name}">
+                        <label for="${category.name}">${category.name}</label><br>`
                   )
                   .join("")}
             </div>
         </div>
-        <button class="btn btn-primary">Post</button>
+        <button class="btn btn-primary">
+        Post</button>
         <div id="showError" class="error-message"></div>
         </form>
         </div>
