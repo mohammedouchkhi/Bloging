@@ -109,7 +109,7 @@ export default class extends AbstractView {
 
     passwordInput.addEventListener("input", () => {
       // Basic password validation
-      if (passwordInput.value.length < 6) {
+      if (passwordInput.value.length < 8) {
         showErr.innerHTML = "Password must be at least 6 characters long";
       } else {
         showErr.innerHTML = "";

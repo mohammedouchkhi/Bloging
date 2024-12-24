@@ -9,7 +9,7 @@ export default class extends AbstractView {
   }
 
   async getHtml() {
-    const isAuthorized = Boolean(this.user.id);
+    const isAuthorized = await fetcher.isLoggedIn();
     return `
         <div class="logo" id="logo">Forum App</div>
 
@@ -30,13 +30,13 @@ export default class extends AbstractView {
   }
 
   async init() {
-    const isAuthorized = await fetcher.checkToken();
+    const isAuthorized = await fetcher.isLoggedIn();
 
     document.getElementById("logo")?.addEventListener("click", () => {
       window.location.href = "/";
     });
 
-    if (isAuthorized?.checker) {
+    if (isAuthorized) {
       // User-specific buttons
       document
         .getElementById("create-post-btn")

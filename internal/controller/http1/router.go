@@ -2,7 +2,10 @@ package http1
 
 import (
 	"fmt"
+	"log"
 	"net/http"
+	"os"
+	"path"
 	"text/template"
 	"time"
 
@@ -33,9 +36,17 @@ func NewHandler(service *service.Service, secret string) *Handler {
 
 func (h *Handler) InitRoutes(conf *config.Conf) *http.ServeMux {
 	mux := http.NewServeMux()
-	fs := http.FileServer(http.Dir("./web/src"))
-	mux.Handle("/src/", http.StripPrefix("/src/", fs))
-
+	mux.HandleFunc("/src/", func(w http.ResponseWriter, r *http.Request) {
+		if _, err := os.Stat(path.Join("./web", r.URL.Path)); os.IsNotExist(err) {
+			http.Redirect(w, r, "/", http.StatusSeeOther)
+			return
+		} else if err != nil {
+			http.Error(w, "Internal Server Error", http.StatusInternalServerError)
+			log.Printf("Error checking file: %v", err)
+			return
+		}
+		http.ServeFile(w, r, path.Join("./web", r.URL.Path))
+	})
 	mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		tmpl, err := template.ParseFiles("./web/index.html")
 		if err != nil {

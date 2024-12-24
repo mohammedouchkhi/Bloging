@@ -105,10 +105,8 @@ const drawComments = (comment) => {
   const el = document.createElement("div");
   el.classList.add("card");
 
-  const authorEl = document.createElement("a");
+  const authorEl = document.createElement("p");
   authorEl.classList.add("card-header");
-  authorEl.setAttribute("href", `/user/${comment.user_id}`);
-  authorEl.setAttribute("data-link", "");
   authorEl.innerText = "Author: " + comment.username;
 
   const body = document.createElement("div");

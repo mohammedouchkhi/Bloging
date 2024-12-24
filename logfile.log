@@ -566,6 +566,7 @@ Link: 🌐 http://0.0.0.0:3030
 2024/12/24 11:59:53 2024/12/24 11:59:53 HTTP/1.1 [GET]	0.0.0.0:3030/api/posts/Database%20Technologies?limit=20&offset=0 - 204 - No Content
 2024/12/24 11:59:53 no posts found for category: Database Technologies
 2024/12/24 11:59:53 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+<<<<<<< HEAD
 2024/12/24 12:29:37 [32mServer is running...🚀
 Link: 🌐 http://0.0.0.0:3030
 2024/12/24 12:38:07 2024/12/24 12:38:07 HTTP/1.1 [POST]	10.1.13.10:3030/api/signup - 400 - Bad Request
@@ -756,3 +757,232 @@ Link: 🌐 http://0.0.0.0:7070
 2024/12/24 18:31:05 invalid email or password
 2024/12/24 18:31:17 2024/12/24 18:31:17 HTTP/1.1 [POST]	0.0.0.0:7070/api/signin - 400 - Bad Request
 2024/12/24 18:31:17 invalid password
+=======
+2024/12/24 12:45:53 [32mServer is running...🚀
+Link: 🌐 http://0.0.0.0:3030
+2024/12/24 13:03:35 [32mServer is running...🚀
+Link: 🌐 http://0.0.0.0:3030
+2024/12/24 13:05:58 [32mServer is running...🚀
+Link: 🌐 http://0.0.0.0:3030
+2024/12/24 13:08:26 2024/12/24 13:08:26 HTTP/1.1 [GET]	0.0.0.0:3030/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 13:08:26 no posts found for category: General
+2024/12/24 13:08:26 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 14:42:38 2024/12/24 14:42:38 HTTP/1.1 [GET]	0.0.0.0:3030/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 14:42:38 no posts found for category: General
+2024/12/24 14:42:38 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 14:43:19 2024/12/24 14:43:19 HTTP/1.1 [GET]	0.0.0.0:3030/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 14:43:19 no posts found for category: General
+2024/12/24 14:43:19 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 14:43:28 2024/12/24 14:43:28 HTTP/1.1 [GET]	0.0.0.0:3030/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 14:43:28 no posts found for category: General
+2024/12/24 14:43:28 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 14:43:39 2024/12/24 14:43:39 HTTP/1.1 [GET]	0.0.0.0:3030/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 14:43:39 no posts found for category: General
+2024/12/24 14:43:39 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 14:44:04 2024/12/24 14:44:04 HTTP/1.1 [GET]	0.0.0.0:3030/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 14:44:04 no posts found for category: General
+2024/12/24 14:44:04 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 14:44:29 2024/12/24 14:44:29 HTTP/1.1 [GET]	0.0.0.0:3030/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 14:44:29 no posts found for category: General
+2024/12/24 14:44:29 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 14:45:04 2024/12/24 14:45:04 HTTP/1.1 [GET]	0.0.0.0:3030/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 14:45:04 no posts found for category: General
+2024/12/24 14:45:04 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 14:45:20 2024/12/24 14:45:20 HTTP/1.1 [GET]	0.0.0.0:3030/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 14:45:20 no posts found for category: General
+2024/12/24 14:45:20 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 14:45:32 2024/12/24 14:45:32 HTTP/1.1 [GET]	0.0.0.0:3030/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 14:45:32 no posts found for category: General
+2024/12/24 14:45:32 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 15:30:08 [32mServer is running...🚀
+Link: 🌐 http://0.0.0.0:3030
+2024/12/24 15:49:30 [32mServer is running...🚀
+Link: 🌐 http://:3030
+2024/12/24 15:50:10 [32mServer is running...🚀
+Link: 🌐 http://localhost:3030
+2024/12/24 15:50:27 [32mServer is running...🚀
+Link: 🌐 http://localhost:3030
+2024/12/24 15:57:01 [32mServer is running...🚀
+Link: 🌐 http://localhost:8080
+2024/12/24 15:57:50 2024/12/24 15:57:50 HTTP/1.1 [POST]	localhost:8080/api/signin - 400 - Bad Request
+2024/12/24 15:57:50 invalid password
+2024/12/24 15:58:46 2024/12/24 15:58:46 HTTP/1.1 [GET]	localhost:8080/api/post/105 - 404 - Not Found
+2024/12/24 15:58:46 sql: Scan error on column index 0, name "id": converting NULL to uint is unsupported
+2024/12/24 16:19:39 [32mServer is running...🚀
+Link: 🌐 http://localhost:8080
+2024/12/24 16:21:52 2024/12/24 16:21:52 HTTP/1.1 [POST]	localhost:8080/api/signup - 400 - Bad Request
+2024/12/24 16:21:52 bad request: invalid username
+2024/12/24 16:22:15 2024/12/24 16:22:15 HTTP/1.1 [POST]	localhost:8080/api/signup - 400 - Bad Request
+2024/12/24 16:22:15 bad request: invalid username
+2024/12/24 16:22:38 2024/12/24 16:22:38 HTTP/1.1 [POST]	localhost:8080/api/signup - 400 - Bad Request
+2024/12/24 16:22:38 bad request: invalid password
+2024/12/24 16:22:39 2024/12/24 16:22:39 HTTP/1.1 [POST]	localhost:8080/api/signup - 400 - Bad Request
+2024/12/24 16:22:39 bad request: invalid password
+2024/12/24 16:22:39 2024/12/24 16:22:39 HTTP/1.1 [POST]	localhost:8080/api/signup - 400 - Bad Request
+2024/12/24 16:22:39 bad request: invalid password
+2024/12/24 16:22:49 2024/12/24 16:22:49 HTTP/1.1 [POST]	localhost:8080/api/signup - 400 - Bad Request
+2024/12/24 16:22:49 bad request: invalid username
+2024/12/24 16:23:02 2024/12/24 16:23:02 HTTP/1.1 [POST]	localhost:8080/api/signup - 400 - Bad Request
+2024/12/24 16:23:02 bad request: invalid password
+2024/12/24 16:23:04 2024/12/24 16:23:04 HTTP/1.1 [POST]	localhost:8080/api/signup - 400 - Bad Request
+2024/12/24 16:23:04 bad request: invalid password
+2024/12/24 16:23:04 2024/12/24 16:23:04 HTTP/1.1 [POST]	localhost:8080/api/signup - 400 - Bad Request
+2024/12/24 16:23:04 bad request: invalid password
+2024/12/24 16:23:04 2024/12/24 16:23:04 HTTP/1.1 [POST]	localhost:8080/api/signup - 400 - Bad Request
+2024/12/24 16:23:04 bad request: invalid password
+2024/12/24 16:23:05 2024/12/24 16:23:05 HTTP/1.1 [POST]	localhost:8080/api/signup - 400 - Bad Request
+2024/12/24 16:23:05 bad request: invalid password
+2024/12/24 16:23:22 2024/12/24 16:23:22 HTTP/1.1 [POST]	localhost:8080/api/signup - 400 - Bad Request
+2024/12/24 16:23:22 bad request: invalid username
+2024/12/24 16:23:28 2024/12/24 16:23:28 HTTP/1.1 [POST]	localhost:8080/api/signup - 400 - Bad Request
+2024/12/24 16:23:28 bad request: invalid password
+2024/12/24 16:23:35 2024/12/24 16:23:35 HTTP/1.1 [POST]	localhost:8080/api/signup - 400 - Bad Request
+2024/12/24 16:23:35 bad request: invalid password
+2024/12/24 16:23:37 2024/12/24 16:23:37 HTTP/1.1 [POST]	localhost:8080/api/signup - 400 - Bad Request
+2024/12/24 16:23:37 bad request: invalid password
+2024/12/24 16:31:39 2024/12/24 16:31:39 HTTP/1.1 [GET]	localhost:8080/api/post/0 - 404 - Not Found
+2024/12/24 16:31:39 sql: Scan error on column index 0, name "id": converting NULL to uint is unsupported
+2024/12/24 16:32:36 2024/12/24 16:32:36 HTTP/1.1 [GET]	localhost:8080/api/post/0 - 404 - Not Found
+2024/12/24 16:32:36 sql: Scan error on column index 0, name "id": converting NULL to uint is unsupported
+2024/12/24 16:33:33 2024/12/24 16:33:33 HTTP/1.1 [GET]	localhost:8080/api/posts/my-post?limit=20&offset=0 - 204 - No Content
+2024/12/24 16:33:33 no posts found for category: my-post
+2024/12/24 16:33:33 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 16:33:40 2024/12/24 16:33:40 HTTP/1.1 [GET]	localhost:8080/api/posts/my-post?limit=20&offset=0 - 204 - No Content
+2024/12/24 16:33:40 no posts found for category: my-post
+2024/12/24 16:33:40 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 16:33:45 2024/12/24 16:33:45 HTTP/1.1 [GET]	localhost:8080/api/posts/my-post?limit=20&offset=0 - 204 - No Content
+2024/12/24 16:33:45 no posts found for category: my-post
+2024/12/24 16:33:45 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 16:34:08 2024/12/24 16:34:08 HTTP/1.1 [GET]	localhost:8080/api/posts/liked?limit=20&offset=0 - 204 - No Content
+2024/12/24 16:34:08 no posts found for category: liked
+2024/12/24 16:34:08 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 16:37:08 2024/12/24 16:37:08 HTTP/1.1 [GET]	localhost:8080/api/post/10000 - 404 - Not Found
+2024/12/24 16:37:08 sql: Scan error on column index 0, name "id": converting NULL to uint is unsupported
+2024/12/24 16:37:47 2024/12/24 16:37:47 HTTP/1.1 [GET]	localhost:8080/api/post/1m - 400 - Bad Request
+2024/12/24 16:37:47 invalid post id
+2024/12/24 16:38:17 2024/12/24 16:38:17 HTTP/1.1 [POST]	localhost:8080/api/post/vote - 401 - Unauthorized
+2024/12/24 16:38:17 invalid token
+2024/12/24 16:38:18 2024/12/24 16:38:18 HTTP/1.1 [POST]	localhost:8080/api/signout - 401 - Unauthorized
+2024/12/24 16:38:18 invalid token
+2024/12/24 16:39:22 2024/12/24 16:39:22 HTTP/1.1 [POST]	localhost:8080/api/post/vote - 401 - Unauthorized
+2024/12/24 16:39:22 invalid token
+2024/12/24 16:39:22 2024/12/24 16:39:22 HTTP/1.1 [POST]	localhost:8080/api/signout - 401 - Unauthorized
+2024/12/24 16:39:22 invalid token
+2024/12/24 16:41:10 2024/12/24 16:41:10 HTTP/1.1 [POST]	localhost:8080/api/post/vote - 401 - Unauthorized
+2024/12/24 16:41:10 no token cookie
+2024/12/24 16:41:10 2024/12/24 16:41:10 HTTP/1.1 [POST]	localhost:8080/api/signout - 401 - Unauthorized
+2024/12/24 16:41:10 no token cookie
+2024/12/24 16:56:21 2024/12/24 16:56:21 HTTP/1.1 [POST]	localhost:8080/api/signup - 400 - Bad Request
+2024/12/24 16:56:21 bad request: password must have at least oneupper casecharacter
+2024/12/24 16:56:34 2024/12/24 16:56:34 HTTP/1.1 [POST]	localhost:8080/api/signup - 400 - Bad Request
+2024/12/24 16:56:34 bad request: password must have at least onenumericcharacter
+2024/12/24 16:56:50 2024/12/24 16:56:50 HTTP/1.1 [POST]	localhost:8080/api/signup - 400 - Bad Request
+2024/12/24 16:56:50 bad request: password must have at least oneupper casecharacter
+2024/12/24 16:57:20 2024/12/24 16:57:20 HTTP/1.1 [POST]	localhost:8080/api/signup - 400 - Bad Request
+2024/12/24 16:57:20 bad request: already username is using
+2024/12/24 16:59:28 2024/12/24 16:59:28 HTTP/1.1 [POST]	localhost:8080/api/post/vote - 401 - Unauthorized
+2024/12/24 16:59:28 invalid token
+2024/12/24 16:59:28 2024/12/24 16:59:28 HTTP/1.1 [POST]	localhost:8080/api/signout - 401 - Unauthorized
+2024/12/24 16:59:28 invalid token
+2024/12/24 16:59:33 2024/12/24 16:59:33 HTTP/1.1 [POST]	localhost:8080/api/post/vote - 401 - Unauthorized
+2024/12/24 16:59:33 invalid token
+2024/12/24 16:59:33 2024/12/24 16:59:33 HTTP/1.1 [POST]	localhost:8080/api/signout - 401 - Unauthorized
+2024/12/24 16:59:33 invalid token
+2024/12/24 17:02:37 2024/12/24 17:02:37 HTTP/1.1 [GET]	localhost:8080/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 17:02:37 no posts found for category: General
+2024/12/24 17:02:37 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 17:10:22 2024/12/24 17:10:22 HTTP/1.1 [POST]	localhost:8080/api/post/create - 400 - Bad Request
+2024/12/24 17:10:22 data is empty
+2024/12/24 17:10:59 2024/12/24 17:10:59 HTTP/1.1 [POST]	localhost:8080/api/post/create - 400 - Bad Request
+2024/12/24 17:10:59 data is empty
+2024/12/24 17:11:01 2024/12/24 17:11:01 HTTP/1.1 [POST]	localhost:8080/api/post/create - 400 - Bad Request
+2024/12/24 17:11:01 data is empty
+2024/12/24 17:12:28 2024/12/24 17:12:28 HTTP/1.1 [GET]	localhost:8080/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 17:12:28 no posts found for category: General
+2024/12/24 17:12:28 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 17:12:58 2024/12/24 17:12:58 HTTP/1.1 [GET]	localhost:8080/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 17:12:58 no posts found for category: General
+2024/12/24 17:12:58 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 17:19:56 [32mServer is running...🚀
+Link: 🌐 http://localhost:8080
+2024/12/24 17:20:02 2024/12/24 17:20:02 HTTP/1.1 [GET]	localhost:8080/api/posts/Database%20Technologies?limit=20&offset=0 - 204 - No Content
+2024/12/24 17:20:02 no posts found for category: Database Technologies
+2024/12/24 17:20:02 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 17:20:02 2024/12/24 17:20:02 HTTP/1.1 [GET]	localhost:8080/api/posts/Software%20Engineering?limit=20&offset=0 - 204 - No Content
+2024/12/24 17:20:02 no posts found for category: Software Engineering
+2024/12/24 17:20:02 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 17:20:03 2024/12/24 17:20:03 HTTP/1.1 [GET]	localhost:8080/api/posts/Programming%20Languages?limit=20&offset=0 - 204 - No Content
+2024/12/24 17:20:03 no posts found for category: Programming Languages
+2024/12/24 17:20:03 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 17:20:04 2024/12/24 17:20:04 HTTP/1.1 [GET]	localhost:8080/api/posts/Web%20Development?limit=20&offset=0 - 204 - No Content
+2024/12/24 17:20:04 no posts found for category: Web Development
+2024/12/24 17:20:04 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 17:20:05 2024/12/24 17:20:05 HTTP/1.1 [GET]	localhost:8080/api/posts/Programming%20Languages?limit=20&offset=0 - 204 - No Content
+2024/12/24 17:20:05 no posts found for category: Programming Languages
+2024/12/24 17:20:05 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 17:20:05 2024/12/24 17:20:05 HTTP/1.1 [GET]	localhost:8080/api/posts/Software%20Engineering?limit=20&offset=0 - 204 - No Content
+2024/12/24 17:20:05 no posts found for category: Software Engineering
+2024/12/24 17:20:05 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 17:20:05 2024/12/24 17:20:05 HTTP/1.1 [GET]	localhost:8080/api/posts/Database%20Technologies?limit=20&offset=0 - 204 - No Content
+2024/12/24 17:20:05 no posts found for category: Database Technologies
+2024/12/24 17:20:05 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 17:27:55 2024/12/24 17:27:55 HTTP/1.1 [POST]	localhost:8080/api/signup - 400 - Bad Request
+2024/12/24 17:27:55 bad request: invalid password
+2024/12/24 17:28:32 2024/12/24 17:28:32 HTTP/1.1 [GET]	localhost:8080/api/posts/Web%20Development?limit=20&offset=0 - 204 - No Content
+2024/12/24 17:28:32 no posts found for category: Web Development
+2024/12/24 17:28:32 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 17:28:33 2024/12/24 17:28:33 HTTP/1.1 [GET]	localhost:8080/api/posts/Programming%20Languages?limit=20&offset=0 - 204 - No Content
+2024/12/24 17:28:33 no posts found for category: Programming Languages
+2024/12/24 17:28:33 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 17:28:33 2024/12/24 17:28:33 HTTP/1.1 [GET]	localhost:8080/api/posts/Database%20Technologies?limit=20&offset=0 - 204 - No Content
+2024/12/24 17:28:33 no posts found for category: Database Technologies
+2024/12/24 17:28:33 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 17:28:34 2024/12/24 17:28:34 HTTP/1.1 [GET]	localhost:8080/api/posts/Database%20Technologies?limit=20&offset=0 - 204 - No Content
+2024/12/24 17:28:34 no posts found for category: Database Technologies
+2024/12/24 17:28:34 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 17:28:54 2024/12/24 17:28:54 HTTP/1.1 [GET]	localhost:8080/api/posts/General?limit=20&offset=100 - 204 - No Content
+2024/12/24 17:28:54 no posts found for category: General
+2024/12/24 17:28:54 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 17:48:15 [32mServer is running...🚀
+Link: 🌐 http://localhost:8080
+2024/12/24 17:49:13 2024/12/24 17:49:13 HTTP/1.1 [POST]	localhost:8080/api/post/create - 200 - OK
+2024/12/24 17:49:13 invalid category
+2024/12/24 18:06:14 [32mServer is running...🚀
+Link: 🌐 http://localhost:8080
+2024/12/24 18:06:16 2024/12/24 18:06:16 HTTP/1.1 [GET]	localhost:8080/src/assets/css/global.css/dhnqzjkdaz - 404 - Not Found
+2024/12/24 18:06:16 not found
+2024/12/24 18:09:03 2024/12/24 18:09:03 HTTP/1.1 [GET]	localhost:8080/src/assets/css/global.css/nkze - 404 - Not Found
+2024/12/24 18:09:03 not found
+2024/12/24 18:09:18 [32mServer is running...🚀
+Link: 🌐 http://localhost:8080
+2024/12/24 18:21:21 2024/12/24 18:21:21 HTTP/1.1 [GET]	localhost:8080/api/posts/General?limit=20&offset=100 - 204 - No Content
+2024/12/24 18:25:02 test
+2024/12/24 18:25:02 [32mServer is running...🚀
+Link: 🌐 http://localhost:8080
+2024/12/24 18:30:02 [32mServer is running...🚀
+Link: 🌐 http://localhost:8080
+2024/12/24 18:30:06 Executing query with LIMIT 20 and OFFSET 0
+2024/12/24 18:30:07 Executing query with LIMIT 20 and OFFSET 20
+2024/12/24 18:30:07 Executing query with LIMIT 20 and OFFSET 40
+2024/12/24 18:30:08 Executing query with LIMIT 20 and OFFSET 60
+2024/12/24 18:30:08 Executing query with LIMIT 20 and OFFSET 80
+2024/12/24 18:30:09 Executing query with LIMIT 20 and OFFSET 100
+2024/12/24 18:30:20 Executing query with LIMIT 20 and OFFSET 120
+2024/12/24 18:30:20 2024/12/24 18:30:20 HTTP/1.1 [GET]	localhost:8080/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 18:30:20 no posts found for category: General
+2024/12/24 18:30:20 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 18:31:04 [32mServer is running...🚀
+Link: 🌐 http://localhost:8080
+2024/12/24 18:31:13 2024/12/24 18:31:13 HTTP/1.1 [GET]	localhost:8080/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 18:31:13 no posts found for category: General
+2024/12/24 18:31:13 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+>>>>>>> 394a3f10f2d6ceec261a4fe19f12d364a6b151ac
+2024/12/24 18:33:57 [32mServer is running...🚀
+Link: 🌐 http://localhost:8080
+2024/12/24 18:34:06 2024/12/24 18:34:06 HTTP/1.1 [POST]	localhost:8080/api/post/vote - 401 - Unauthorized
+2024/12/24 18:34:06 no token cookie
+2024/12/24 18:34:06 2024/12/24 18:34:06 HTTP/1.1 [POST]	localhost:8080/api/signout - 401 - Unauthorized
+2024/12/24 18:34:06 no token cookie
+2024/12/24 18:34:12 2024/12/24 18:34:12 HTTP/1.1 [GET]	localhost:8080/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 18:34:12 no posts found for category: General
+2024/12/24 18:34:12 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
