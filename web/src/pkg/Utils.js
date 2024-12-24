@@ -7,10 +7,11 @@ const showError = (status, message) => {
     403: "403 Forbidden",
     404: "404 Not Found",
     405: "405 Method Not Allowed",
+    429: "429 Too Many Requests",
     500: "500 Internal Server Error",
     503: "503 Service Unavailable",
   };
-
+  
   app.innerHTML = `
         <div class="errorDiv">
         <h1>${titles[status]}</h1><br>

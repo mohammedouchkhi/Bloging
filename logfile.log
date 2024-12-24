@@ -566,3 +566,53 @@ Link: 🌐 http://0.0.0.0:3030
 2024/12/24 11:59:53 2024/12/24 11:59:53 HTTP/1.1 [GET]	0.0.0.0:3030/api/posts/Database%20Technologies?limit=20&offset=0 - 204 - No Content
 2024/12/24 11:59:53 no posts found for category: Database Technologies
 2024/12/24 11:59:53 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 12:45:53 [32mServer is running...🚀
+Link: 🌐 http://0.0.0.0:3030
+2024/12/24 13:03:35 [32mServer is running...🚀
+Link: 🌐 http://0.0.0.0:3030
+2024/12/24 13:05:58 [32mServer is running...🚀
+Link: 🌐 http://0.0.0.0:3030
+2024/12/24 13:08:26 2024/12/24 13:08:26 HTTP/1.1 [GET]	0.0.0.0:3030/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 13:08:26 no posts found for category: General
+2024/12/24 13:08:26 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 14:42:38 2024/12/24 14:42:38 HTTP/1.1 [GET]	0.0.0.0:3030/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 14:42:38 no posts found for category: General
+2024/12/24 14:42:38 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 14:43:19 2024/12/24 14:43:19 HTTP/1.1 [GET]	0.0.0.0:3030/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 14:43:19 no posts found for category: General
+2024/12/24 14:43:19 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 14:43:28 2024/12/24 14:43:28 HTTP/1.1 [GET]	0.0.0.0:3030/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 14:43:28 no posts found for category: General
+2024/12/24 14:43:28 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 14:43:39 2024/12/24 14:43:39 HTTP/1.1 [GET]	0.0.0.0:3030/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 14:43:39 no posts found for category: General
+2024/12/24 14:43:39 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 14:44:04 2024/12/24 14:44:04 HTTP/1.1 [GET]	0.0.0.0:3030/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 14:44:04 no posts found for category: General
+2024/12/24 14:44:04 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 14:44:29 2024/12/24 14:44:29 HTTP/1.1 [GET]	0.0.0.0:3030/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 14:44:29 no posts found for category: General
+2024/12/24 14:44:29 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 14:45:04 2024/12/24 14:45:04 HTTP/1.1 [GET]	0.0.0.0:3030/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 14:45:04 no posts found for category: General
+2024/12/24 14:45:04 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 14:45:20 2024/12/24 14:45:20 HTTP/1.1 [GET]	0.0.0.0:3030/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 14:45:20 no posts found for category: General
+2024/12/24 14:45:20 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 14:45:32 2024/12/24 14:45:32 HTTP/1.1 [GET]	0.0.0.0:3030/api/posts/General?limit=20&offset=120 - 204 - No Content
+2024/12/24 14:45:32 no posts found for category: General
+2024/12/24 14:45:32 http: superfluous response.WriteHeader call from forum/internal/controller/http1.(*Handler).errorHandler (errorHandler.go:24)
+2024/12/24 15:30:08 [32mServer is running...🚀
+Link: 🌐 http://0.0.0.0:3030
+2024/12/24 15:49:30 [32mServer is running...🚀
+Link: 🌐 http://:3030
+2024/12/24 15:50:10 [32mServer is running...🚀
+Link: 🌐 http://localhost:3030
+2024/12/24 15:50:27 [32mServer is running...🚀
+Link: 🌐 http://localhost:3030
+2024/12/24 15:57:01 [32mServer is running...🚀
+Link: 🌐 http://localhost:8080
+2024/12/24 15:57:50 2024/12/24 15:57:50 HTTP/1.1 [POST]	localhost:8080/api/signin - 400 - Bad Request
+2024/12/24 15:57:50 invalid password
+2024/12/24 15:58:46 2024/12/24 15:58:46 HTTP/1.1 [GET]	localhost:8080/api/post/105 - 404 - Not Found
+2024/12/24 15:58:46 sql: Scan error on column index 0, name "id": converting NULL to uint is unsupported

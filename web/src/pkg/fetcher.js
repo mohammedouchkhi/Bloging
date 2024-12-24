@@ -35,6 +35,21 @@ const fetcher = {
 
     return responseBody;
   },
+  isLoggedIn: async () => {
+    const url = `/api/is-valid`;
+    const options = {
+      mode: "cors",
+      method: "GET",
+    };
+
+    const response = await fetch(url, options);
+    if (!response.ok) {
+      return false;
+    } else {
+      const responseBody = await response.json();
+      return responseBody.checker;
+    }
+  },
 };
 
 const makeRequest = async (path, body, method) => {

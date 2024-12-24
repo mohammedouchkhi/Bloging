@@ -42,7 +42,6 @@ const newPostElement = (post) => {
   const postCard = document.createElement("div");
   postCard.classList.add("post-card");
   postCard.setAttribute("data-post-id", post.post_id);
-
   // Post Card Header
   const postCardHeader = document.createElement("div");
   postCardHeader.classList.add("post-card-header");
@@ -257,6 +256,7 @@ const updatePostInList = async (postId) => {
 
     updateCount("like-button", updatedPost.likes);
     updateCount("dislike-button", updatedPost.dislikes);
+    
     const likeButton = postCard.querySelector(".like-button");
     const dislikeButton = postCard.querySelector(".dislike-button");
 

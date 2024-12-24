@@ -3,11 +3,11 @@ import SignIn from "./views/SignInView.js";
 import SignUp from "./views/SignUpView.js";
 import CreatePost from "./views/CreatePostView.js";
 import Post from "./views/PostView.js";
-import Profile from "./views/ProfileView.js";
 import NavBar from "./views/NavBarView.js";
 import SideBar from "./views/SideBarView.js";
 import Utils from "./pkg/Utils.js";
 import fetcher from "./pkg/fetcher.js";
+import HomeView from "./views/HomeView.js";
 
 const pathToRegex = (path) =>
   new RegExp("^" + path.replace(/\//g, "\\/").replace(/:\w+/g, "(.+)") + "$");
@@ -47,12 +47,6 @@ const router = async () => {
       style: "create-post",
     },
     { path: "/post/:postID", view: Post, minRole: roles.guest, style: "post" },
-    {
-      path: "/user/:userID",
-      view: Profile,
-      minRole: roles.user,
-      style: "profile",
-    },
   ];
 
   const potentialMatches = routes.map((route) => {
@@ -80,6 +74,15 @@ const router = async () => {
   );
   if (!match) {
     Utils.showError(404, "The page you requested does not exist");
+    return;
+  }
+
+  const isLogged = await fetcher.isLoggedIn();
+  if (
+    isLogged &&
+    (match.route.path == "/sign-in" || match.route.path == "/sign-up")
+  ) {
+    navigateTo("/");
     return;
   }
 
