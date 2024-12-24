@@ -155,7 +155,7 @@ export default class extends AbstractView {
         passwordError.textContent = "Password is required";
         return false;
       }
-      if (password.length < 6) {
+      if (password.length < 8) {
         passwordError.textContent =
           "Password must be at least 6 characters long";
         return false;

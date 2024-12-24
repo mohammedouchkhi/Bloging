@@ -25,13 +25,13 @@ func newPostService(postRepo repository.Post, categoryRepo repository.Category) 
 
 func (s *PostService) CreatePost(ctx context.Context, input entity.Post) (uint, int, error) {
 	if input.Data == "" || len(input.Data) > 10000 {
-		return 0, http.StatusBadRequest, errors.New("data is empty")
+		return 0, http.StatusBadRequest, errors.New("size of text must be beyween 1 and 10000")
 	} else if input.Title == "" || len(input.Title) > 58 {
-		return 0, http.StatusBadRequest, errors.New("title is empty")
+		return 0, http.StatusBadRequest, errors.New("size of text must be between 1 and  58")
 	} else if len(input.Categorys) == 0 {
 		return 0, http.StatusBadRequest, errors.New("categorys is empty")
 	} else if len(input.Categorys) > 5 {
-		return 0, http.StatusBadRequest, errors.New("max categorys are 5")
+		return 0, http.StatusBadRequest, errors.New("max categories are 5")
 	}
 
 	for _, category := range input.Categorys {
@@ -41,7 +41,7 @@ func (s *PostService) CreatePost(ctx context.Context, input entity.Post) (uint, 
 		}
 
 		if !exist {
-			return 0, status, err
+			return 0, status, errors.New("invalid category")
 		}
 	}
 
@@ -72,7 +72,6 @@ func (s *PostService) CreatePost(ctx context.Context, input entity.Post) (uint, 
 func (s *PostService) GetPostByID(ctx context.Context, postID uint) (entity.Post, int, error) {
 	return s.postRepo.GetPostByID(ctx, postID)
 }
-
 
 func (s *PostService) UpsertPostVote(ctx context.Context, input entity.PostVote) (int, error) {
 	if input.Vote != 0 && input.Vote != 1 {
