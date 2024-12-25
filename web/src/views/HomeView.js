@@ -28,7 +28,6 @@ const getPostsByCategory = async (category) => {
       const post = posts[i];
       const el = newPostElement(post);
       postsDoc.append(el);
-      console.log(post.post_id);
     }
     offset += posts.length;
   } else {
@@ -375,7 +374,6 @@ let category = "General";
 
 async function handleScroll() {
   if (ended) {
-    console.log("No more posts to load. Removing scroll listener.");
     const postsContainer = document.getElementById("posts");
     postsContainer?.removeEventListener("scroll", handleScroll); // Remove the event listener
     return;
@@ -394,7 +392,6 @@ async function handleScroll() {
       postsContainer.scrollTop + postsContainer.clientHeight >=
       postsContainer.scrollHeight
     ) {
-      console.log("Reached the bottom of the page.");
       // Load more posts
       const user = Utils.getUser();
       if (category === "my-posts") {
