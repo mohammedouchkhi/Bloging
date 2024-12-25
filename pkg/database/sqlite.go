@@ -2,7 +2,6 @@ package database
 
 import (
 	"database/sql"
-	"fmt"
 	"os"
 	"path/filepath"
 
@@ -12,7 +11,7 @@ import (
 )
 
 func ConnectSqlte(c *config.Database) (*sql.DB, error) {
-	db, err := sql.Open(c.Driver, fmt.Sprintf("%v?_foreign_keys=on&cache=shared&mode=rwc", c.FileName))
+	db, err := sql.Open(c.Driver, c.FileName)
 	if err != nil {
 		return nil, err
 	}

@@ -27,7 +27,7 @@ SELECT
     p.user_id,
     p.title,
     p.data,
-    u.username,
+    u.username,	
     (SELECT COUNT(*) FROM post_vote WHERE post_id = p.id AND vote = 1) as likes,
     (SELECT COUNT(*) FROM post_vote WHERE post_id = p.id AND vote = 0) as dislikes,
     (SELECT COUNT(*) FROM comment WHERE post_id = p.id) as comments_count,
@@ -42,7 +42,7 @@ FROM
     INNER JOIN category_and_post tp ON p.id = tp.post_id
     INNER JOIN users u ON u.id = p.user_id
     INNER JOIN category t ON tp.category_id = t.id
-WHERE t.name = $2
+WHERE t.name LIKE($2) 
 ORDER BY p.id DESC
 LIMIT $3 OFFSET $4;
 `
@@ -54,7 +54,6 @@ LIMIT $3 OFFSET $4;
 	defer prep.Close()
 
 	posts := []entity.Post{}
-
 	rows, err := prep.QueryContext(ctx, userId, categoryName, limit, offset)
 	if err != nil {
 		return nil, http.StatusBadRequest, err

@@ -1,7 +1,8 @@
-package http1
+package http
 
 import (
 	"encoding/json"
+	"fmt"
 	"net/http"
 	"strconv"
 
@@ -31,6 +32,7 @@ func (h *Handler) getALLPosts(w http.ResponseWriter, r *http.Request) {
 		h.errorHandler(w, r, status, err.Error())
 		return
 	}
+	fmt.Println(posts[0])
 	if err := json.NewEncoder(w).Encode(posts); err != nil {
 		h.errorHandler(w, r, http.StatusInternalServerError, err.Error())
 		return

@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	"forum/internal/controller/http1"
+	"forum/internal/controller/http"
 	"forum/internal/repository"
 	"forum/internal/server"
 	"forum/internal/service"
@@ -43,7 +43,7 @@ func Run(cfg *config.Conf) {
 	// Prepare router <- -> service  <- -> repository
 	repo := repository.NewRepository(db)
 	service := service.NewService(repo, secret)
-	handler := http1.NewHandler(service, secret)
+	handler := http.NewHandler(service, secret)
 	server := new(server.Server)
 	// Start listening server
 	log.Fatalf("error occured while listening server: %s", server.Run(&cfg.API, handler.InitRoutes(cfg)))
