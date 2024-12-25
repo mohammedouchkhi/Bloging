@@ -53,6 +53,8 @@ func (s *PostService) CreatePost(ctx context.Context, input entity.Post) (uint, 
 		return 0, status, err
 	}
 
+	input.Categorys = append(input.Categorys, "General")
+
 	CategoryIDS, status, err := s.categoryRepo.GetCategorysIDByName(ctx, input.Categorys)
 	if err != nil {
 		if _, Posterr := s.postRepo.DeletePostByID(ctx, postID, input.UserID); Posterr != nil {
