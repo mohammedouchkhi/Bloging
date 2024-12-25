@@ -7,9 +7,10 @@ WORKDIR /app
 # Copy the rest of the application code
 COPY . .
 
-EXPOSE 5000
+EXPOSE 8080
 
 LABEL version="0.0.1"
 LABEL description="This is a Dockerfile for the forum project"
+RUN go build -o Forum
 
-CMD go run . 5000
+CMD "./Forum"
